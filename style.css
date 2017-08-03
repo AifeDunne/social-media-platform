@@ -1,0 +1,541 @@
+/*
+ Theme Name:   Charlotte's MedWeb
+ Theme URI:    http://uzuhost.com/clients/medWeb/
+ Description:  Child theme for Karma
+ Author:       Aife Dunne
+ Author URI:   http://www.uzu-media.com
+ Template:     karma
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         custom
+ Text Domain:  karma-child
+*/
+body::selection { background: #ffb7b7; }
+body::-moz-selection { background: #ffb7b7; }
+::selection { background: blue !important; }
+::-moz-selection { background: blue !important; }
+body { font-size: 16px; }
+p { line-height: 1.6em; }
+.main-area { padding-bottom:0 !important; }
+.logo { margin-top:15px; margin-bottom:5px; }
+#menu-main-nav { margin-top: 15px; font-family: 'Roboto', sans-serif; }
+#menu-main-nav li strong { font-size:inherit !important; letter-spacing: 2px !important; font-weight:300 !important; margin-top:5px !important; }
+#content .search-form { width: 90%;  float: none;  margin-left: auto; }
+#content.content_full_width { margin-left:auto; margin-right:auto; }
+.woocommerce table.shop_table { margin-top:20px; }
+.woocommerce table.shop_table < form::parent .woocommerce-message { display:none; }
+.variation-Membership p { margin-top:-5px; }.tools { display:none; }li div { float: none !important; }
+
+.one_half { width:15% !important; }
+.one_half_last { float:left !important; width:70% !important; margin-top:22px; }
+.one_half_last .sub-menu { float:left; width:56% !important; margin-top:8px; }
+.one_half_last .textwidget { float:left; width:30%; }
+.footer-content { width:88%; padding-top:70px; padding-bottom:10px; }
+.footer-content li { float:left; padding-right: 8.3%; }
+.footer-content li > a { color:#FFF; font-family:'Roboto', sans-serif; text-transform:uppercase; font-weight:300 !important; }
+.footer-content li:nth-child(6) { display:none; }
+.footer-content li a span strong { font-weight:300 !important; font-family:'Roboto', sans-serif; text-transform:uppercase; }.footer-content li strong a { font-weight:300 !important; font-family:'Roboto', sans-serif; text-transform:uppercase; }
+#footer-top { display:none; }
+@media only screen and (min-width: 500px) { #footer-img { width:70% !important; } #icon-row { margin-left:8% !important; } }
+@media screen and (max-width: 1116px) { .header-area { width: 90% !important; } }
+@media screen and (max-width: 1023px) { #menu-main-nav { margin-top:0px !important; } }
+@media screen and (max-width: 1000px) { .header-area { width:90%; margin:0 !important; } }
+@media screen and (max-width: 960px) { .header-area { width:83% !important; margin:0 !important; } #menu-main-nav > li { padding-right:11px !important; } #menu-main-nav { float:left !important; } }
+@media screen and (max-width: 787px) { .one_half_last .sub-menu { width:100% !important; } .one_half { width: 22% !important; margin-right:2% !important; } }
+@media screen and (max-width: 690px) { .one_half_last { clear:left; } }
+@media only screen and (max-width: 620px) { #footer-img { width:200px !important; } #footer .tt-column { width:100% !important; } .one_half_last .textwidget { clear:left; } }
+@media only screen and (max-width: 500px) { #content { padding:0 !important; width:100% !important; } .footer-content { margin:0 !important; } #foot_left { width:23% !important; } } 
+@media only screen and (max-width: 389px) { #footer-img { width:150px !important; } }
+@media only screen and (max-width: 290px) { #footer-img { width:100px !important; } }
+div#tabWrapper { box-shadow: 40px 40px 60px rgba(78, 143, 172, 0.31); }
+div#tabWrapper { background-image: url(https://charlottesmedweb.com/wp-content/uploads/2017/01/med-web-background.png); background-position: right bottom; background-repeat: no-repeat; }
+div#app-nav { border-bottom: solid 5px #1F5F7F; background-color: transparent; }
+input.patientFormI, textarea.patientFormI { border: none; background-color: rgba(186, 202, 217, 0.56); border-radius: 5px; }
+div#profile-page { background-image: url(https://charlottesmedweb.com/wp-content/uploads/2017/01/med-web-background.png); background-position: bottom right; background-repeat: no-repeat; }
+
+#tt-mobile-menu-list li > .fa-chevron-down { left: -4%; top: 4%; right: initial !important; }
+#tt-mobile-menu-list li a { margin-left:25px; }
+
+body {min-width:initial!important;}
+#footer .one_half_last .textwidget {
+    float: left;
+    width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+#footer .footer-content {
+    padding: 15px;
+    width:auto!important;}
+}
+@media only screen and (max-width: 620px) {
+#footer .tt-column {
+    width: auto!important;
+    margin: 15px 1em !important;}
+}
+#footer_bottom {
+    padding: 25px;
+    width: auto!important;
+}
+#footer-img {
+height: initial!important;
+max-height: 106px;
+    width: auto !important;}
+@media only screen and (max-width: 1023px) {
+#header .logo img, #header .custom-logo, #header .tt-logo-right .logo img {
+    display: block;
+    margin: 15px;}
+}
+.vc_row[data-vc-full-width] {
+    width: 100%!important;
+    position: relative;
+    box-sizing: border-box;
+}
+#content.content_full_width {padding:0;width:100%;}
+@media only screen and (max-width: 1023px) {
+#content.content_sidebar.content_right_sidebar, #content.content_sidebar.content_left_sidebar, #content {
+    width: 100% !important;
+    margin: 0 auto !important;
+    float: none !important;}
+}
+@media only screen and (max-width: 1023px) {
+#main .main-area {
+    width: auto;
+    padding: 0!important;}
+}
+.vc_custom_1486679776970 {
+    padding-top: 0!important;}
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+    margin-bottom: 0!important;}
+#main {
+    padding: 0!important;
+}
+.vc_row wpb_row .vc_row-fluid .vc_custom_1486685196880 .vc_row-has-fill .vc_general .vc_parallax .vc_parallax-content-moving {width:auto;}
+.top-block .top-holder, #header .header-area, .main-area, .footer-content, .info, .jquery3-slider-wrap.flexslider, .tt-container {
+    width: 100%;
+    margin: 0 auto;
+left:0!important;
+}
+@media only screen and (max-width: 500px) {
+#foot_left {width: 100% !important;}
+}
+.lBoxHeader {
+    line-height: normal;
+}
+#heroText {
+    position: absolute;
+    top: 20%;
+    background: rgba(255,255,255,0.7);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    width: 94%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+.vc_custom_1486679776970 {padding-right:15px;}
+#content .search-form .searchsubmit {
+    width: auto;
+    margin-top: 10px!important;
+    margin-left: 0!important;
+}
+#content .search-form .searchsubmit {
+    width: auto;
+    /* margin-top: 0!important; */
+    margin-left: 10px!important;
+    float: left!important;
+}
+.vc_custom_1486585654250 {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 50px !important;
+    width: 100%!important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+#content .search-form {
+    width: 100%;}
+.searchsubmit {
+    margin-top: -19px !important;
+}
+
+.vc_custom_1486678789300 {
+    background-color: #9dc9f0 !important;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+}
+.vc_custom_1486679776970 {
+    background-color: #9dc9f0 !important;
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+}
+@media screen and (max-width: 787px) {
+.vc_custom_1486679776970 {
+    padding-right: 5% !important;
+    padding-left: 5%!important;}
+}
+@media screen and (max-width: 787px) {
+.vc_custom_1486510809779 {
+    padding-left: 0 !important;
+    margin-right: 0!important;
+    margin-left: 0!important;}
+}
+.vc_custom_1486510809779 {
+    box-shadow: none!important;
+}
+.vc_custom_1486679776970 {
+    background-color: #9dc9f0 !important;
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    left: 0!important;
+    right: 0!important;
+    width: 100%!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.vc_custom_1486685196880 {
+    border-bottom-width: 15px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    background-color: #f4f4f2 !important;
+    border-bottom-color: #1e73be !important;
+    border-bottom-style: solid !important;
+    left: 0!important;
+    right: 0!important;
+    /* width: auto!important; */
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+#content .search-form .searchsubmit {
+    width: auto;
+    margin-top: -21px!important;}
+
+.login h1 a {
+    background-image: url(https://charlottesmedweb.com/wp-content/uploads/2017/02/logo-outline-01.png)!important;
+    background-size: 300px!important;
+    height: 154.336283186px!important;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.single_blog_wrap {
+    background: none;
+    margin-bottom: 80px;
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog .main-area {
+    padding-top: 50px !important;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content.content_blog {width: 100%!important;}
+
+@media only screen and (max-width: 480px) {
+#content .tt-blog-no-feature .post_content p, #content .tt-blog-no-feature .post_content h1, #content .tt-blog-no-feature .post_content h2, #content .tt-blog-no-feature .post_content h3, #content .tt-blog-no-feature .post_content h4, #content .tt-blog-no-feature .post_content h5, #content .tt-blog-no-feature .post_content h6 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-right: 0;}
+h1.entry-title, h2.entry-title, h3.entry-title, h4.entry-title, h5.entry-title, h6.entry-title {
+    font-size: 1.9em;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-right: 0;}
+}
+
+.vc_custom_1483487528294 {
+    background-color: #cecece !important;
+    max-width: 1200px!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+left:0!important;
+padding-right:0!important;
+padding-left:0!important;
+}
+
+.paypalrow {
+    max-width: 1200px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+left:0!important;
+padding-right:0!important;
+padding-left:0!important;
+}
+.vc_custom_1486851593700 {
+    background-color: #9dc9f0 !important;
+max-width: 1200px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+left:0!important;
+padding-right:0!important;
+padding-left:0!important;
+}
+.vc_btn3.vc_btn3-color-primary.vc_btn3-style-modern {
+    color: #FFF;
+    border-color: #08c;
+    background-color: #08c;
+    top: -16px!important;
+    margin-left: 20px!important;
+}
+.page-id-870 .main-area {width:100%;
+max-width: 1200px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+left:0!important;
+padding-right:0!important;
+padding-left:0!important;}
+
+.search-results #content {padding: 20px;}
+.search-results #content .content_sidebar .content_right_sidebar, .search-results #content .content_sidebar .content_left_sidebar, .search-results #content {
+    width: 94% !important;
+    margin: 0 auto !important;
+    float: none !important;}
+.search-results #content {padding: 3% !important;}
+#patientHeader {
+    position: relative;
+    float: none;
+    width: 90%!important;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 20px solid #002c8f;
+}
+#patientName {
+    margin-top: 10px!important;
+width: 90%!important;
+}
+#noComments {
+    position: relative;
+    float: left;
+    font-size: 175%;
+    color: #002c8f;
+    margin-top: 2.5%;
+    line-height: normal!important;
+}
+@media screen and (max-width: 900px) {
+div#patientName {
+    font-size: 40px!important;
+}
+#status-submit {
+    height: auto!important;
+    width: auto!important;
+    padding: 15px 25px!important;
+    font-family: Roboto;
+font-weight:700; border: 0;
+font-size:150%;
+    -moz-box-shadow: 2px 2px 0px 0px #666;
+    -webkit-box-shadow: 2px 2px 0px 0px #666;
+    box-shadow: 2px 2px 0px 0px #666;
+}
+#status-submit:hover {
+transform: translate(2px, 2px);
+-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#donateBtn {
+    position: relative;
+    float: right;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    padding-left: 6rem!important;
+    padding-right: 6rem!important;
+    margin-right: 0!important;
+    background: #3b67d0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 160%!important;
+    font-family: 'Roboto', sans-serif;}
+}
+#patient-reg {
+    width:94%!important;
+    margin-bottom: 20px;
+    padding-bottom: 20px;}
+.alignPatientForm {
+    width: auto!important;
+}
+#patient-submit {
+    height: auto!important;
+    width: auto!important;
+    padding: 15px 25px!important;
+    font-family: Roboto;
+font-weight:700;
+font-size:150%;
+    -moz-box-shadow: 2px 2px 0px 0px #666;
+    -webkit-box-shadow: 2px 2px 0px 0px #666;
+    box-shadow: 2px 2px 0px 0px #666;
+}
+#patient-submit:hover {
+transform: translate(2px, 2px);
+-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.patientFormD input, .patientFormD textarea {
+    float: left!important;
+    width: 60%!important;
+    padding: 10px 15px!important;
+    font-family: Roboto!important;
+font-size:140%;
+font-weight:500;
+}
+.patientFormD {
+    float: left;
+    margin-bottom: 1em!important;
+    overflow-y: auto;
+    width: 100%;
+    clear: both;
+}
+
+#patient-reg h3 {margin-top: 1em; margin-bottom:1em;}
+@media screen and (max-width: 1000px) {
+#app-nav {
+    width: 100% !important;}
+#tabWrapper {
+    margin: 0 !important;
+    width: 100% !important;}
+}
+@media screen and (max-width: 863px) {
+#app-nav {
+    width: 100% !important;}
+#tabWrapper {
+    width: 100% !important;}
+}
+@media screen and (max-width: 784px) {
+#app-nav {
+    width: 100% !important;}
+#tabWrapper {
+    width: 100% !important;}
+}
+@media screen and (max-width: 500px) {
+#question1Reg {
+    font-size: 140%!important;
+line-height:1.2;}
+}
+.patientFormD label {
+    float: left;
+    width: 100%!important;
+}
+.patientFormD input {
+    float: left!important;
+    width: 90%!important;
+    padding: 0;
+    margin: 0 auto!important;
+}
+.alignPatientForm {width: 100%!important;}
+.patientFormD textarea {
+    float: left!important;
+    width: 90%!important;
+    padding: 10px 15px!important;
+    font-family: Roboto!important;
+    font-size: 140%;
+    font-weight: 500;
+    margin: 5px 0;
+}
+#delegate-reg, #eDelegate-reg {
+    position: relative;
+    float: left;
+    width: 90%!important;
+    height: 100%;
+    margin-right: 3%;
+    clear: both;
+    padding-bottom: 2%;
+    margin-left: 3%;
+    font-family: Roboto;
+    font-size: 120%;
+}
+#delegate-reg h3 {margin-top:1em; margin-bottom:1em;}
+.eDelegateFormD, .delegateFormD {
+    float: left;
+    width: 100%;
+    margin-bottom: 1em;
+    clear: both;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.eDelegateFormD input, .delegateFormD input {
+    float: left!important;
+    width: 77%;
+    font-family: Roboto;
+    padding: 5px;
+}
+.eDelegateFormD label, .delegateFormD label, .eDelegateFormD span, .delegateFormD span {
+    float: left;
+    width: 100%!important;
+    }
+.delegateEnter1, .delegateEnter2 {
+    float: left;
+    height: auto!important;
+    width: auto;
+    clear: left;
+    font-family: Roboto!important;
+    font-weight: 700!important;
+    padding: 15px 25px!important;
+}
+#eDelegate-reg button {
+    float: left;
+    height: auto!important;
+    font-family: Roboto!important;
+    font-weight: 700!important;
+    padding: 15px 25px!important;
+    font-size: 1em;
+    border-radius: 0;
+}
+@media only screen and (max-width: 730px) {
+#content.content_full_width {
+    padding: 0 10px;
+    width: 100%!important;
+    margin-left: auto!important;
+    margin-right: auto!important;}
+}
+.woocommerce #content table.cart td.actions .button, .woocommerce table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button {
+    display: block;
+    width: 100%;
+    font-family: Roboto;
+}
+.woocommerce-cart #content.content_full_width {
+    padding: 0 20px!important;
+    width: 100%;
+    max-width: 1200px;
+    float: none!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+.woocommerce-checkout #content.content_full_width {
+    padding: 0 20px!important;
+    width: 100%;
+    max-width: 1200px;
+    float: none!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+#welcomevidrow {margin:0 auto!important; padding:0!important;}
+.welcomevideo {max-width:1200px!important;margin:0 auto!important;} 
+
+#patientName, #patientHeadText {
+    color: #002c8f!important;}

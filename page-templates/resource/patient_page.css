@@ -1,0 +1,105 @@
+.entry-content { margin-bottom:0 !important; }
+
+#contentCenter { position:relative; float:none; width:100%; overflow-y:auto; }
+#patientHeader { position:relative; float:none; width:85%; overflow-y:auto; margin-left:auto; margin-right:auto; border-bottom:20px solid #002c8f; }
+#mainProfilePic { position:relative; float:left; width:22%; height:auto; overflow:hidden;}
+#mainProfilePic img { width:100%; height:auto; }
+#patientName { position:relative; float:left; margin-left:3%; margin-top:3%; width:70%; color:#000080; font-weight:bold; font-size:450%; line-height:100%; }
+#patientHeadText { position:relative; float:left; width:70%; margin-left:3%; margin-top:0.5%; color:#000080; font-size:145%; font-family: 'Roboto', sans-serif; line-height: 1.5em; }
+#donateBtn { position:relative; float:right; padding-top:1.25%; padding-bottom:1.25%; padding-left:6%; padding-right:6%; margin-right:5%; background:#3b67d0; margin-top:2%; margin-bottom:2%; text-decoration:none; color:#FFF; font-size:140%; font-family: 'Roboto', sans-serif; }
+
+#patientMidInner { position:relative; float:none; margin-left:auto; margin-right:auto; padding-top:2%; }
+#patientMidHeader { position:relative; float:left; font-size:245%; color:#002c8f; font-weight:bold; clear:both; }
+#commentArray { position:relative; float:left; width:100%; clear:both; margin-top: 3%; }
+.commentBox { position:relative; float:left; width:100%; clear:both; background:#d4e2ff; margin-bottom:2.5%;}
+.commentBoxInner { position:relative; float:left; padding:2%; width: 96%; }
+.commentSec1 { position:relative; float:left; width:9%; margin-right:1%;}
+.commentSec2 { position:relative; float:left; width:85%; }
+.commentSec2H1 { position:relative; float:left; width:100%; clear:both; color:#002c8f; font-size:200%; margin-bottom:1.5%; text-transform:uppercase; font-weight:bold; }
+.commentSec2H2 { font-weight: normal !important; font-family: 'Roboto', sans-serif; color:#002d8f; }
+.updateDetails { position:relative; float:left; clear:both; font-size:90%; font-weight:bold; color:#002d8f; margin-bottom:1.5%}
+.statusContent { position:relative; float:left; clear:both; font-size:100%; color:#000; line-height:1.5em; }
+#noComments { position:relative; float:left; font-size:175%; color:#002c8f; margin-top:2.5%; }
+.imgHolder { float:left; margin-top:2%; height:50vh; clear:both; }
+.gImgBlock { position: relative; float:left; width:100%; margin-top:2%; clear:both; }
+.gImgTxt { float:left; font-size:120%; color:#002d8f; padding-top:1.5%; clear:left; }
+.gImgBtn { float:right; height:3vh; width: 20%; padding-top:1.5%; padding-bottom:2.7%; padding-left:3%; padding-right:3%; background:transparent; border:1px solid black; margin-bottom:1%; clear:right; cursor:pointer; }
+.gImgHolder { float:left; height:50vh; clear:both; display:none; }
+
+@media screen and (max-width:900px) {
+div#patientName { clear: left; }
+div#patientHeader { margin: 10px; max-width: 120vw; }
+div#patientMidInner { margin: 10px; max-width: 90vw; }
+div#patientMidHeader { font-size: 20px; }
+span.commentSec2H2 { font-size: 18px; }
+.commentSec2H1 { font-size: 18px !important; }
+.commentSec2 { clear: left; }
+img.avatar.avatar-96.photo { max-width: none; }
+div#patientName { font-size: 24px; }
+div#patientHeadText { font-size: 18px; }
+#donateBtn { margin-right:100px; }
+}
+
+/* Will's Custom CSS */
+#patientName { margin-top: -11px; }
+#patientHeadText { padding-bottom: 20px; }
+
+/* UI Style */
+#dashMDCol1 { position:relative; float:left; width:100%; height:auto; clear:both; color:#FFF; }
+	#dashCommentBox { position:absolute; top:0; left:0; width:100%; overflow-y:auto; background:#D3D3D3; color:#FFF; }
+#statusBox { position:relative; float:left; width:96%; height:auto; overflow-y:auto; padding-bottom:1.25%; padding-left:2%; padding-right:2%; clear:both; color:#FFF; }
+#patientPHead { float:left; font-size:130%; line-height:130%; font-weight: bold; margin-left: 2%; margin-top: 0.25%; margin-bottom:0.5%; color:#FFF; } 
+#sBox1 { float:left; width:48%; margin-bottom:0.3%; color:#FFF; }
+	#sBox1A { float:left; width:100%; clear:left; margin-bottom: 1%; color:#FFF; }
+		.comment-label { float:left; width:33%; font-size:150%; padding:0; line-height:150%; color:#FFF; }
+	#sBox1B { float:left; width:100%; clear:left; color:#FFF;}
+		.new-comment { float:right; height:3vh; width:65%; }
+#sBox2 { float:right; width:50%; color:#FFF; }
+	#sBox2 label { width: auto; color:#FFF; }
+	#sBox2 textarea { height: 13vh; width:84.5%; }
+	#prevNewPostImg, .prevEditPostImg, .prevUploadPostImg { position:relative; float:left; height:auto; width:15%; clear:both; margin-top:1%; }
+	#prevNewPostImg img, .prevEditPostImg img, .prevUploadPostImg img  { width:100%; height:auto; }
+	#add-commentPic { float:left; clear:both; margin-bottom:2%; }
+	.edit-commentPic, .upload-commentPic { float:left; margin-left:0.4%; margin-bottom:2%; clear:right;  }
+	.setAsGSpan { float:left; margin-right:0.5%; font-weight: bold; font-size: 120%; line-height:120%; clear:left; }
+	.setAsGraphic { float:left; clear:right; }
+#status-submit { position:relative; float:left; margin-top:.5em; width:100%; height:5vh; clear:both; font-size:125%; line-height:125%; }
+
+#commentTopBar { position:relative; float:left; padding-top:1%; padding-bottom:1%; width:96%; padding-left:2%; padding-right:2%; background:#FFF; clear:both; font-size:150%; line-height:150%; }
+#sortByDash { position:relative; float:left; width:35%; }
+	#sortByDash span { float:left; font-size:100%; line-height: 100%; }
+	#sortByDash select { float:left; height:3vh; width:50%; margin-left:1.5%; font-size:90%; line-height:90%; color:#135A7D; }
+#dashMDCol2 { position:relative; float:left; width:100%; overflow-y:auto; overflow-x:hidden; clear:both; background:#F4F4F2; }
+	.mainComment { position:relative; float:left; width:100%; height:auto; padding-bottom:10px; margin-top:20px; clear:both; background:#e0eaff; color:#012d90; }
+	.displayComment { position:relative; float:left; }
+		.nameComment { position:relative; float:left; font-weight:bold; font-size:130%; line-height:130%; }
+		.commentDate { position:relative; float:right; font-size:130%; line-height:130%; }
+		.commentInner { position:relative; float:left; width:95%; padding-left:2%; padding-right:2%; padding-top:1%; clear:both; }
+		.commentStatus { float:left; padding-bottom:0.5%; font-size:120%; line-height:120%; clear:both; line-height:120%; }
+		.commentLoc { float:left; font-size:120%; line-height:120%; clear:both; }
+		.commentContent { float:left; margin-bottom:1%; clear:both; font-size:100%; line-height:100%; margin-bottom:1%; }
+	.openEdit, .closeEdit { float:left; margin-bottom:0.5%; clear:both; font-size:110%; line-height:110%; font-weight:bold; cursor:pointer; text-decoration:none; color:blue; }
+	.openEdit:hover, .closeEdit:hover, { text-decoration:underline; }
+	.closeEdit { margin-left:2%; margin-top:0.5%; }
+	.editComment, .addCommentPic { position:relative; float:left; width:96%; margin-left:2%; padding-top:0.5%; }
+	.editCField { position:relative; float:left; margin-top:0.3%; clear:both; width:100%; }
+	.eCommentLabel { position:relative; float:left; font-weight:bold; font-size:120%; line-height:120%; }
+		.editCommentData { position:relative; float:left; margin-left:1%; width:25%; }
+		.editCommentText { position:relative; float:left; width:100%; height:10vh; }
+	.editPComment, .addPComment { float:left; width:24.7%; height:4vh; margin-top:0.5%; clear:left; }
+		.deleteNowComment { height:4vh; width:100%; } 
+	.addCommentPic > .setAsGSpan { margin-left:auto; }
+	
+	#profileColumn1 { float:left; width:50%; height:100%; }
+	#profileColumn2 { float:left; width:50%; height:100%; }
+
+.option-box { float:left; margin-top:1%; clear:both; }
+	.option-form { float:left; width:95%; margin-left:2%; }
+	.option-label { float:left; font-size:150%; line-height:150%; }
+	.option-check { float:left; width:2vh; height: 2vh; margin-top: 3.8%; }
+	#options-submit { float:left; margin-top:1%; padding:1%; clear:both; }
+
+.commentHeadR { float:left; width:98%; padding-bottom:0.7%; padding-left:1%; padding-right:1%; padding-top:10px; border-top: 1px solid white; background: #FCFCFC; }
+.replacePicTxt { float:left; font-weight: bold; font-size:120%; line-height:120%; clear:left; }
+.rmfComment { position:absolute; bottom:10px; right:2%; width:17%; }
+.delTxt { float:left; margin-right:0.4%; font-weight:bold; font-size:120%; clear:left; }
